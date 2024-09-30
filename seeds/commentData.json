@@ -1,0 +1,37 @@
+[
+    {
+        "author": "Ethan",
+        "content": "Glad that you are here!",
+        "post_id": 2
+    },
+    {
+        "author": "Elyssa",
+        "content": "Yay for you!",
+        "post_id": 1
+    },
+    {
+        "author": "Elton",
+        "content": "I can post things too!",
+        "post_id": 1
+    },
+    {
+        "author": "Maverick",
+        "content": "Why am I typing? I am a dog!!!!",
+        "post_id": 2
+    },
+    {
+        "author": "Ethan",
+        "content": "Hey there big boy!",
+        "post_id": 3
+    },
+    {
+        "author": "Elyssa",
+        "content": "Who gave Maverick access to a computer?",
+        "post_id": 4
+    },
+    {
+        "author": "Ethan",
+        "content": "How did he learn how to type?",
+        "post_id": 4
+    }
+]
