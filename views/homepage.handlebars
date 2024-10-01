@@ -1,3 +1,34 @@
-{{#each blog_posts as |post|}}
-{{> posts}}
+{{!-- HTML for the trigger --}}
+<div class="new">
+    <button class="js-modal-trigger button is-success" data-target="create-content">
+        Create a new Post
+    </button>
+</div>
+
+{{#each plainPosts as |post|}}
+<div class="card posts">
+    <h2 class="card-header-title">{{post.title}}</h2>
+    <h3 class="card-content author">Written by: {{post.author}}</h3>
+</div>
 {{/each}}
+
+
+{{!-- HTML for modal --}}
+<div class="modal" id="create-content"></div>
+  <div class="modal-background"></div>
+  <div class="modal-content content-form">
+    <div class="field">
+        <lable class="label">Title</lable>
+        <div class="control">
+            <input class="input" type="text" placeholder="Awesome title here!">
+        </div>
+    </div>
+    <div class="field"></div>
+        <lable class="label">Content</lable>
+        <div class="control">
+            <input class="textarea" type="text" placeholder="Let the creative juices flow here!">
+        </div>
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>

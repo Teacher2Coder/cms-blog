@@ -1,7 +1,38 @@
 header {
+    margin-top: 20px;
     text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .button {
     margin: 3px;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.posts {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.author {
+    text-align: right;
+}
+
+.content-form {
+    width: 80%
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
