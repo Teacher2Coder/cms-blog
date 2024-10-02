@@ -11,19 +11,19 @@ BlogPost.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        title: {
+        post_title: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        author: {
+        post_author: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        date: {
+        post_date: {
             type: DataTypes.DATE,
             allowNull: false
         },
-        content: {
+        post_content: {
             type: DataTypes.STRING,
             allowNull: false
         }

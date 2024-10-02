@@ -1,13 +1,12 @@
 const router = require('express').Router();
 const BlogPost = require('../models/BlogPost');
-const Comment = require('../models/Comment');
 const withAuth = require('../utils/auth');
 
 // Get all Blog posts for home page
 router.get('/', async (req, res) => {
     try {
         const blogPostsData = await BlogPost.findAll({
-            order: [['date', 'DESC']]
+            order: [['post_date', 'DESC']]
         })
         
         const plainPosts = blogPostsData.map((posts) => posts.get({ plain: true }));

@@ -9,15 +9,20 @@ router.get('/:id', async (req, res) => {
     // Redirects users to login if not logged in
     try {
         const postData = await BlogPost.findByPk(req.params.id);
+        const commentData = await Comment.findAll({ where: { post_id: req.params.id } })
 
         const post = postData.get({ plain: true });
+        const comments = commentData.map((comment) => comment.get({ plain: true }));
 
-        res.render('post', post)
+        console.log("This is the comment data", comments, "---------------------------------------");
+
+        res.render('post', { post, comments })
 
     } catch (err) {
         console.error(err);
         res.status(500).json(err);
     }
 });
+
 
 module.exports = router;

@@ -1,9 +1,15 @@
-
-
 <div class="card" style="width: 70%; margin: 0 auto; padding: 20px">
-    <h2 class="title is-2 post-title">{{title}}</h3>
-    <h3 class="title is-3 post-title">By: {{author}}</h3>
-    <p class="card-content">
-        {{content}}
-    </p>
+    <h2 class="title is-2 post-title">{{post.post_title}}</h2>
+    <h3 class="title is-3 post-title">By: {{post.post_author}}</h3>
+    <p class="card-content">{{post.post_content}}</p>
+</div>
+
+<div class="comment-section">
+    <h3 class="title is-3">Comments</h3>
+{{#each comments as |comment|}}
+    <div class="card comment-card">
+        <h4 class="title is-4" style="margin-left: 20px;">Comment by: {{comment.comment_author}}</h4>
+        <p class="card-content">{{comment.comment_content}}</p>
+    </div>    
+{{/each}}
 </div>

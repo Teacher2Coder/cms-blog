@@ -49,6 +49,19 @@ a {
     width: 80%
 }
 
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.comment-card {
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+}
+
 .login-page-cards {
     display: flex;
     flex-direction: row;
