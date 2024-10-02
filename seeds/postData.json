@@ -2,21 +2,25 @@
     {
         "title": "My First Blog Post!",
         "author": "Ethan",
+        "date": "2023/12/05",
         "content": "This is my first ever blog post! I am so excited to share this with the world!"
     },
     {
         "title": "The Second Blog Post",
         "author": "Elyssa",
+        "date": "2024/03/30",
         "content": "I am Elyssa and I am the second person to post something!"
     },
     {
         "title": "The Third Blog Post",
         "author": "Elton",
+        "date": "2024/04/21",
         "content": "I am Elton and I am a really stinky boy!"
     },
     {
         "title": "The Final Blog Post",
         "author": "Maverick",
+        "date": "2024/9/30",
         "content": "I am Maverick and I am a dog who is typing on this blog. Its like that really unfunny Disney show. I hope who ever thought of that got fired."
     }
 ]

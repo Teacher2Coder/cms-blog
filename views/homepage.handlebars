@@ -1,20 +1,25 @@
 {{!-- HTML for the trigger --}}
-<div class="new">
+{{!-- <div class="new">
     <button class="js-modal-trigger button is-success" data-target="create-content">
         Create a new Post
     </button>
-</div>
+</div> --}}
 
 {{#each plainPosts as |post|}}
-<div class="card posts">
-    <h2 class="card-header-title">{{post.title}}</h2>
-    <h3 class="card-content author">Written by: {{post.author}}</h3>
-</div>
+<a href="/posts/{{post.id}}">
+    <div class="card posts">
+        <h3 class="title is-3 post-title">{{post.title}}</h3>
+        <div class="post-info">
+            <h3 class="card-content date">Posted on: {{post.date}}</h3>
+            <h3 class="card-content author">Written by: {{post.author}}</h3>
+        </div>
+    </div>
+</a>
 {{/each}}
 
 
 {{!-- HTML for modal --}}
-<div class="modal" id="create-content"></div>
+{{!-- <div class="modal" id="create-content"></div>
   <div class="modal-background"></div>
   <div class="modal-content content-form">
     <div class="field">
@@ -31,4 +36,4 @@
     </div>
   </div>
   <button class="modal-close is-large" aria-label="close"></button>
-</div>
+</div> --}}

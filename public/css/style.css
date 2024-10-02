@@ -4,12 +4,15 @@ header {
 }
 
 nav {
+    display: flex;
+    justify-content: space-around;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.button {
-    margin: 3px;
+.nav-btn {
+    margin: 10px;
+    width: 15%;
 }
 
 .new {
@@ -18,9 +21,24 @@ nav {
     margin-bottom: 30px;
 }
 
+a {
+    margin: 10px;
+}
+
 .posts {
     width: 80%;
     margin: 0 auto;
+    padding: 15px;
+}
+
+.post-title {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-between;
 }
 
 .author {
@@ -29,6 +47,13 @@ nav {
 
 .content-form {
     width: 80%
+}
+
+.login-page-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
