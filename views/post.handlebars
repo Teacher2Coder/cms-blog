@@ -10,6 +10,32 @@
     <div class="card comment-card">
         <h4 class="title is-4" style="margin-left: 20px;">Comment by: {{comment.comment_author}}</h4>
         <p class="card-content">{{comment.comment_content}}</p>
-    </div>    
+    </div>
 {{/each}}
+</div>
+
+{{!-- HTML for Trigger --}}
+<button class="js-modal-trigger button is-success comment-btn" data-id="{{post.id}}" data-target="create-comment">Add a comment to this post</button>
+
+{{!-- HTML for modal --}}
+<div id="create-comment" class="modal">
+    <div class="modal-background">
+        <div class="modal-content">
+            <div class="modal-card">
+                <div class="modal-card-body">
+                    <h3 class="title is-3" style="text-align: center;"> ⬇️ Type your comment below! ⬇️ </h3>
+                    <form>
+                        <div class="input-group modal-inputs">
+                            <label for="comment-content-input">Your comment:</label>
+                            <textarea id="comment-content-input" class="form-input" type="text"></textarea>
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                            <button class="button is-success" type="submit" id="submit-comment">Post!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  <button class="modal-close is-large" aria-label="close"></button>
 </div>
