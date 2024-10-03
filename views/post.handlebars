@@ -15,7 +15,7 @@
 </div>
 
 {{!-- HTML for Trigger --}}
-<button class="js-modal-trigger button is-success comment-btn" data-id="{{post.id}}" data-target="create-comment">Add a comment to this post</button>
+<button class="js-modal-trigger button is-success comment-btn" data-post="{{post.id}}" data-target="create-comment" id="comment">Add a comment to this post</button>
 
 {{!-- HTML for modal --}}
 <div id="create-comment" class="modal fade">
@@ -40,3 +40,5 @@
     </div>
   <button class="modal-close is-large" aria-label="close"></button>
 </div>
+
+<script src="/js/comment.js"></script>
