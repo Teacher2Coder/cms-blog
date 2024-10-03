@@ -18,7 +18,7 @@
 <button class="js-modal-trigger button is-success comment-btn" data-id="{{post.id}}" data-target="create-comment">Add a comment to this post</button>
 
 {{!-- HTML for modal --}}
-<div id="create-comment" class="modal">
+<div id="create-comment" class="modal fade">
     <div class="modal-background">
         <div class="modal-content">
             <div class="modal-card">
@@ -29,8 +29,9 @@
                             <label for="comment-content-input">Your comment:</label>
                             <textarea id="comment-content-input" class="form-input" type="text"></textarea>
                         </div>
-                        <div style="display: flex; justify-content: center;">
+                        <div style="display: flex; justify-content: space-around;">
                             <button class="button is-success" type="submit" id="submit-comment">Post!</button>
+                            <button class="close-modal button is-danger" type="submit" id="close-modal">Cancel</button>
                         </div>
                     </form>
                 </div>

@@ -14,10 +14,7 @@ router.get('/:id', async (req, res) => {
         const post = postData.get({ plain: true });
         const comments = commentData.map((comment) => comment.get({ plain: true }));
 
-        console.log("This is the comment data", comments, "---------------------------------------");
-
         res.render('post', { post, comments })
-
     } catch (err) {
         console.error(err);
         res.status(500).json(err);

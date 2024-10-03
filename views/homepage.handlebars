@@ -16,7 +16,7 @@
 {{/each}}
 
 
-<div id="create-post" class="modal">
+<div id="create-post" class="modal fade">
     <div class="modal-background">
         <div class="modal-content">
             <div class="modal-card">
@@ -31,8 +31,9 @@
                             <label for="post-content-input">Post content:</label>
                             <textarea id="post-content-input" class="form-input" type="text"></textarea>
                         </div>
-                        <div style="display: flex; justify-content: center;">
+                        <div style="display: flex; justify-content: space-around;">
                             <button class="button is-success" type="submit" id="submit-post">Post!</button>
+                            <button class="close-modal button is-danger" type="submit" id="close-modal">Cancel</button>
                         </div>
                     </form>
                 </div>
