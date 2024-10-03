@@ -19,7 +19,14 @@
     </header>
     <nav>
         <a class="button is-link nav-btn" href="/">Home</a>
+
+        {{#if loggedIn}}
+        <a class="button is-link nav-btn" id="logout" href="/login">Logout</a>
+        {{/if}}
+
+        {{#unless loggedIn}}
         <a class="button is-link nav-btn" href="/login">Login</a>
+        {{/unless}}
     </nav>
     <main>
         {{{ body }}}
@@ -30,5 +37,8 @@
 </body>
 
 <script src="/js/modal.js"></script>
+{{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
 
 </html>

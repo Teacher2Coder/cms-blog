@@ -88,12 +88,14 @@ a {
 
 #post-content-input {
     min-width: 70%;
+    max-width: 70%;
     min-height: 200px;
     padding: 5px;
 }
 
 #comment-content-input {
     min-width: 70%;
+    max-width: 70%;
     min-height: 200px;
     padding: 5px;
 }

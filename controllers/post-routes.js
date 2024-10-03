@@ -5,7 +5,7 @@ const withAuth = require('../utils/auth');
 
 
 // GET a single blog post
-router.get('/:id', async (req, res) => {
+router.get('/:id', withAuth, async (req, res) => {
     // Redirects users to login if not logged in
     try {
         const postData = await BlogPost.findByPk(req.params.id);

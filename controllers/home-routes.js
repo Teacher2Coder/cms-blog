@@ -3,7 +3,7 @@ const BlogPost = require('../models/BlogPost');
 const withAuth = require('../utils/auth');
 
 // Get all Blog posts for home page
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
         const blogPostsData = await BlogPost.findAll({
             order: [['post_date', 'DESC']]
@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
         
         const plainPosts = blogPostsData.map((posts) => posts.get({ plain: true }));
        
-        res.render('homepage', { plainPosts });
+        res.render('homepage', { plainPosts, loggedIn: req.session.loggedIn, user: req.session.username });
 
     } catch (err) {
         console.error(err);
