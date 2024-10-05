@@ -11,7 +11,8 @@ This application is a CMS style blog posting website that allows users to create
  
 ## Installation
 To install the rerquired dependencies for this repository, run ```npm install```.
-Create a .env file  that is structured like this:
+
+Next, create a .env file  that is structured like this:
 ```
 DB_NAME='blog_db'
 DB_USER='postgres'
@@ -26,14 +27,30 @@ To create the database, open your postgres shell and run the command ```\i db/sc
 
 Upon opening the webpage, the user will be greated by several blog posts by different authors, but they will not be able to see what these blog posts have to say until they create their own account or log in to an already created account. To do so, they will need to click the "Login" button at the top.
 
+![homepage](./assets/homepage.png)
+
 On the login page, the user will have the option to create a new account or sign in to an account that they already created. Once they have done so, they will be redirected to the home page.
+
+![login](./assets/login.png)
 
 Users may now click on someone's blog post and read what they had to say. If the user wishes, they can leave a comment as well.
 
+![add comment](./assets/new-comment.png)
+
 If the user wishes to create their own blog post, on the home page, the user must click the "Create a new Post" button where they will be prompted to write their own blog post in a modal. Once the user clicks "Post!", the post will be added to the database.
 
-The user may also edit their post when they click on their post from the home page and they click on the "Edit Post" button. The user will be asked to make their edits and then submit them. The page will then be reloaded with the changes added. Also if the user wishes, they can delete the post as well. Before the post is deleted, a modal will ask the user to confirm their decision. Once the user confirms, the post will be deleted.
+![new post](./assets/new-post.png)
+
+The user may also edit their post when they click on their post from the home page and they click on the "Edit Post" button. The user will be asked to make their edits and then submit them. The page will then be reloaded with the changes added. 
+
+![user post](./assets/user-post.png)
+![edit post](./assets/edit-post.png)
+
+Also if the user wishes, they can delete the post as well. Before the post is deleted, a modal will ask the user to confirm their decision. Once the user confirms, the post will be deleted.
  
+![delete post](./assets/delete-post.png)
+
+
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
