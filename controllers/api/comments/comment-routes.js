@@ -8,9 +8,9 @@ router.post('/', withAuth, async (req, res) => {
             comment_author: req.session.user,
             comment_content: req.body.commentContent,
             post_id: req.body.postId
-        })
+        });
 
-        res.status(200).json(commentData)
+        res.status(200).json(commentData);
 
     } catch (err) {
         console.error(err);

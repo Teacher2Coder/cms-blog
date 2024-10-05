@@ -11,7 +11,7 @@ router.post('/', withAuth, async (req, res) => {
             post_content: req.body.postContent
         });
 
-        res.status(200).json(postData)
+        res.status(200).json(postData);
 
     } catch (err) {
         console.error(err);
@@ -28,7 +28,8 @@ router.put('/:id', async (req, res) => {
         },
         {
             where: { id: req.params.id }
-        })
+        });
+        
         res.status(200).json(updatedPost);
     } catch (err) {
         console.error(err);
