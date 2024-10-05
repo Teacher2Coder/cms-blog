@@ -14,7 +14,9 @@ router.get('/:id', withAuth, async (req, res) => {
         const post = postData.get({ plain: true });
         const comments = commentData.map((comment) => comment.get({ plain: true }));
 
-        res.render('post', { post, comments, loggedIn: req.session.loggedIn })
+        const canEdit = req.session.user == post.post_author;
+
+        res.render('post', { post, comments, loggedIn: req.session.loggedIn, canEdit })
     } catch (err) {
         console.error(err);
         res.status(500).json(err);
